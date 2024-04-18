@@ -1,2 +1,77 @@
-@import "reset.css"
+@import "reset.css";
 
+:root{
+    --background-color: #ffffff;
+    --default-text-color: #021f34;
+    --highlight-text-color: #e59115;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    padding: 0 1.15%;
+    color: var(--default-text-color);
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--default-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.highlight {
+    color: var(--highlight-text-color);
+    font-weight: bold;
+    font-size: 1.015em;
+}
+
+#nav {
+    padding: 0.5em 0 0 1.1em;
+    margin: 1rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+img#logo {
+    width: 65%;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: auto;
+}
+
+.menu div:first-child {
+    margin-right: 6rem;
+}
+
+#intro {
+    padding: 1rem 0;
+    font-size: 1.05em;
+    text-align: center;
+}
+
+#benefits {
+    background-color: #021f34;
+    color: #ffffff;
+    
+}
+
+.list {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#benefits .list li {
+    width: fit-content;
+}
