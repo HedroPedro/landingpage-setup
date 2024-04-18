@@ -8,7 +8,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    padding: 0 1.15%;
+    margin: 0 1.15%;
     color: var(--default-text-color);
 }
 
@@ -63,15 +63,30 @@ img#logo {
 #benefits {
     background-color: #021f34;
     color: #ffffff;
-    
+    padding: 1% 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .list {
     display: flex;
-    text-align: center;
     justify-content: space-evenly;
 }
 
 #benefits .list li {
     width: fit-content;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.about {
+    font-size: 1.1em;
+}
+
+.campus-image{
+    width: 85%;
+    height: fit-content;
 }
