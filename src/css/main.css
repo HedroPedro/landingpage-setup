@@ -39,8 +39,8 @@ ul {
 }
 
 img#logo {
-    width: 65%;
-    height: 100%;
+    width: fit-content;
+    height: fit-content;
 }
 
 .menu {
@@ -77,13 +77,13 @@ img#logo {
     font-size: 1.5em;
 }
 
+#benefits .list li{
+    padding-left: 15%;
+}
+
 .list {
     display: flex;
     justify-content: space-evenly;
-}
-
-#benefits .list li {
-    width: fit-content;
 }
 
 .title {
@@ -93,6 +93,10 @@ img#logo {
 
 .about {
     font-size: 1.1em;
+}
+
+#campus > .title {
+    margin: 1.25rem 0 0.25rem;
 }
 
 .campus-image{
@@ -114,6 +118,10 @@ img#logo {
 #campus .list {
     display: block;
     text-align: center;
+}
+
+#cornelio, #jacarezinho, #luiz-meneghel {
+    margin-top: 1.25rem;
 }
 
 .availabe-cursos {
@@ -159,10 +167,4 @@ img#logo {
 .centered img:hover{
     box-shadow: inset 0 5px 10px 0px #021f343d;
     cursor: pointer;
-}
-
-.curso-name {
-    text-align: center;
-    align-self: center;
-    width: 100%;
 }
