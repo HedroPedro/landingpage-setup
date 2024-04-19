@@ -48,6 +48,7 @@ img#logo {
     justify-content: center;
     align-self: center;
     width: auto;
+    font-size: 1.25em;
 }
 
 .menu div:first-child {
@@ -61,11 +62,19 @@ img#logo {
 }
 
 #benefits {
-    background-color: #021f34;
-    color: #ffffff;
+    background-color: var(--default-text-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0px var(--default-text-color),
+    1px 2px 1px 1px var(--default-text-color); 
     padding: 1% 0;
     margin-bottom: 0.5rem;
     text-align: center;
+}
+
+#benefits h2 {
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
 .list {
@@ -79,7 +88,7 @@ img#logo {
 
 .title {
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.35em;
 }
 
 .about {
@@ -87,11 +96,73 @@ img#logo {
 }
 
 .campus-image{
-    width: 85%;
-    height: fit-content;
+    width: 50%;
+    height: 45%;
+    border-radius: 15%;
+    box-shadow: 0 5px 12px 1px var(--default-text-color);
+    margin: 1% 0;
+}
+
+#campus .title, #campus .about {
+    text-align: center;
+}
+
+#campus .about {
+    padding: 0 1.4rem;
 }
 
 #campus .list {
     display: block;
     text-align: center;
+}
+
+.availabe-cursos {
+    font-size: 1.25em;
+    margin-bottom: 2%;
+}
+
+.cursos-list {
+    padding: 0 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: justify;
+    column-count: 2;
+    margin-bottom: 1.5%;
+}
+
+.cursos-list li {
+    display: grid;
+    padding: 0 0px;
+    text-align: center;
+    width: 25%;
+}
+
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered img {
+    object-fit: contain;
+    padding: 12px 0;
+    width: 128px;
+    height: 128px;
+    box-shadow: 0 5px 10px 0px #021f343d;
+    border-radius: 25%;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.centered img:hover{
+    box-shadow: inset 0 5px 10px 0px #021f343d;
+    cursor: pointer;
+}
+
+.curso-name {
+    text-align: center;
+    align-self: center;
+    width: 100%;
 }
