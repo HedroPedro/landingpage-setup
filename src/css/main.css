@@ -244,8 +244,8 @@ img#logo {
         padding: 0 0 5%;
     }
 
-    #benefits .list:first-child{
-        padding: 2.5% 0 5%;
+    #benefits .list li:first-child{
+        padding: 2.5% 0 2.5%;
     }
 
     .campus-image {
