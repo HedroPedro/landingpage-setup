@@ -140,7 +140,6 @@ img#logo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: justify;
     margin-bottom: 1.5%;
 }
 
@@ -169,6 +168,50 @@ img#logo {
     box-shadow: inset 0 5px 10px 0px #021f343d;
     cursor: pointer;
 }
+
+#footer {
+    margin-bottom: 5px;
+    padding-bottom: 1% !important;
+    background-color: var(--default-text-color);
+    border-radius: 15px;
+    color: var(--background-color);
+    height: fit-content;
+    position: relative;
+    padding: 1.5% 1.5% 0 1.5%;
+    z-index: 1;
+}
+
+#footer .list {
+    justify-content: inherit;
+}
+
+a.contact{
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.go-back-button {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    transform: translate(-110%, -110%);
+    background-color: var(--default-text-color);
+    padding: 1% 2%; 
+    border-radius: 100px;
+    box-shadow: 0 5px 10px 0px var(--default-text-color),
+    1px 2px 1px 1px var(--default-text-color),
+    1px 2px 1px 2.5px var(--background-color);
+    z-index: 1;
+}
+
+.go-back-button img {
+    width: 32px;
+    height: 32px;
+    transform: rotate(270deg);
+    width: fit-content;
+    align-self: center;
+}
+
 
 @media only screen and (max-width: 600px){
     body {
@@ -264,6 +307,19 @@ img#logo {
     #campus {
         font-size: 0.95em;
     }
+
+    #footer {
+        text-align: center;
+    }
+
+    #footer .list {
+        display: grid;
+    }
+
+    #footer ul li {
+        font-size: 1.15em;
+        padding: 0.5rem 0;
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -281,6 +337,11 @@ img#logo {
         padding: 5% 5% 5% 0;
     }
 
+    .campus-image {
+        width: 65%;
+        height: 55%;
+    }
+
     .cursos-list li {
         width: 33%;
         font-size: 1.2em;
@@ -289,6 +350,10 @@ img#logo {
     .centered img {
         width: 96px;
         height: 96px;
+    }
+
+    #footer ul li{
+        width: 25%;
     }
 }
 
@@ -307,20 +372,36 @@ img#logo {
         width: 95%;
         height: 80%;
     }
+
+    #footer{
+        font-size: 1.35em;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+
+    #intro {
+        font-size: 1.5em;
+    }
+
+    #campus .title, #cmapus .about {
+        font-size: 1.75em;
+    }
 
     #nav {
         font-size: 1.55em;
     }
 
     #benefits {
-        font-size: 1.25em;
+        font-size: 1.15em;
     }
 
     #benefits h2{
         font-size: 2em;
+    }
+
+    #campus {
+        font-size: 1.25em;
     }
 
     #benefits .list li {
@@ -339,7 +420,9 @@ img#logo {
 
     .cursos-list li{
         width: 25% !important;
+        font-size: 1em;
     }
+
 }
 
 @media only screen and (min-width: 2560px){
