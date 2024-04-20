@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='src/css/main.css'>
+    <script src="./src/scripts/main.js" defer></script>
 </head>
 <body>
     <header id="nav">
@@ -49,7 +50,15 @@
                 <li id="cornelio">
                     <div class="campus-list title">Campus Cornélio Procópio</div>
                     <div class="campus-list about">O Campus Cornélio Procópio está localizado na Rodovia PR 160</div>
-                    <img src="src/imgs/ccp.jpg" alt="" class="campus-image"/>
+                    <div class="image-container">
+                        <button onclick="changeCCPImage(-1)">
+                            <span><</span>
+                        </button>
+                        <img src="src/imgs/ccp1.jpg" alt="" id="ccp-image" class="campus-image"/>
+                        <button onclick="changeCCPImage(1)">
+                            <span>></span>
+                        </button>
+                    </div>
                     <div class="availabe-cursos highlight">Cursos disponíveis:</div>
                     <div>
                         <ul class="cursos-list">
@@ -67,7 +76,11 @@
                 <li id="jacarezinho">
                     <div class="campus-list title">Campus Jacarezinho</div>
                     <div class="campus-list about">O Campus Jacarezinho está localizado na Avenida Manoel Ribas, n°215 </div>
-                    <img src="src/imgs/cj.jpg" alt="" class="campus-image"/>
+                    <div class="image-container">
+                        <button onclick="changeCJImage(-1)"><span><</span></button>
+                        <img src="src/imgs/cj1.jpg" alt="" id="cj-image" class="campus-image"/>
+                        <button onclick="changeCJImage(1)"><span>></span></button>
+                    </div>
                     <div class="availabe-cursos highlight">Cursos disponíveis:</div>
                     <div>
                         <ul class="cursos-list">
@@ -87,7 +100,7 @@
                 <li id="luiz-meneghel">
                     <div class="campus-list title">Campus Luiz Meneghel</div>
                     <div class="campus-list about">O campus Luiz Meneghel está localizado na Rodovia BR 369 em Bandeirantes</div>
-                    <img src="src/imgs/clm.jpg" alt="" class="campus-image"/>
+                    <div class="image-container"><button onclick="changeCLMImage(-1)"><span><</span></button><img src="src/imgs/clm1.jpg" alt="" id="clm-image" class="campus-image"/><button onclick="changeCLMImage(1)"><span>></span></button></div>
                     <div class="availabe-cursos highlight">Cursos disponíveis:</div>
                     <div>
                         <ul class="cursos-list">
