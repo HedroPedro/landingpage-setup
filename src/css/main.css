@@ -1,12 +1,12 @@
 @import "reset.css";
 
-:root{
+:root {
     --background-color: #ffffff;
     --default-text-color: #022036;
     --highlight-text-color: #e59115;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     margin: 0 1.15%;
     color: var(--default-text-color);
@@ -100,8 +100,6 @@ img#logo {
 }
 
 .campus-image{
-    width: 50%;
-    height: 45%;
     border-radius: 15%;
     box-shadow: 0 5px 12px 1px var(--default-text-color);
     margin: 1% 0;
@@ -135,7 +133,6 @@ img#logo {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: justify;
-    column-count: 2;
     margin-bottom: 1.5%;
 }
 
@@ -143,9 +140,7 @@ img#logo {
     display: grid;
     padding: 0 0px;
     text-align: center;
-    width: 25%;
 }
-
 
 .centered {
     display: flex;
@@ -156,8 +151,6 @@ img#logo {
 .centered img {
     object-fit: contain;
     padding: 12px 0;
-    width: 128px;
-    height: 128px;
     box-shadow: 0 5px 10px 0px #021f343d;
     border-radius: 25%;
     text-align: center;
@@ -167,4 +160,193 @@ img#logo {
 .centered img:hover{
     box-shadow: inset 0 5px 10px 0px #021f343d;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    img#logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    #nav {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: fit-content;
+    }
+
+    .nav {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 50%;
+    }
+
+    .menu {
+        display: block;
+        align-self: center;
+        text-align: center;
+        font-size: 1.35em;
+    }
+
+    .menu div:first-child {
+        margin-right: 0;
+    }
+
+    .centered img {
+        padding: 12px 0;
+        width: 64px;
+        height: 64px;
+    }
+
+    #intro {
+        padding: 1rem 0;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #benefits {
+        margin: 0 2.5%;
+    }
+
+    #benefits h2 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #benefits .list {
+        display: block;
+        font-size: 0.85em;
+    }
+
+    #benefits .list li{
+        padding: 0 0 5%;
+    }
+
+    .campus-image {
+        width: 95%;
+        height: 100%;
+    }
+
+    .cursos-list li {
+        display: grid;
+        padding: 0 0px;
+        text-align: center;
+        width: 50%;
+        font-size: 0.78em;
+    }
+
+    #campus {
+        font-size: 0.95em;
+    }
+}
+
+@media only screen and (min-width: 600px){
+
+    #benefits .list {
+        padding-left: 2.5%;
+        
+    }
+
+    #benefits .list li{
+        padding: 5% 0 5%;
+    }
+
+    #benefits .list li:first-child{
+        padding: 5% 5% 5% 0;
+    }
+
+    .cursos-list li {
+        width: 33%;
+        font-size: 1.2em;
+    }
+
+    .centered img {
+        width: 96px;
+        height: 96px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .cursos-list li {
+        width: 33%;
+        font-size: 1.2em;
+    }
+
+    .centered img {
+        width: 128px;
+        height: 128px;
+    }
+
+    .campus-image {
+        width: 95%;
+        height: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #nav {
+        font-size: 1.55em;
+    }
+
+    #benefits {
+        font-size: 1.25em;
+    }
+
+    #benefits h2{
+        font-size: 2em;
+    }
+
+    #benefits .list li {
+        padding: 0 0 !important;
+        font-size: 1.25em;
+    }
+
+    #benefits .list li:first-child {
+        padding: 0% 0% 5% 0 !important;
+    }
+
+    .campus-image {
+        width: 75%;
+        height: 85%;
+    }
+
+    .cursos-list li{
+        width: 25% !important;
+    }
+}
+
+@media only screen and (min-width: 2560px){
+    
+    #campus {
+        font-size: 1.75em;
+    }
+
+    .centered img {
+        width: 256px;
+        height: 256px;
+    }
+
+    .campus-image {
+        width: 65% !important;
+        height: 55% !important;
+    }
+
+    .cursos-list li {
+        font-size: 1.1em;
+    }
 }
