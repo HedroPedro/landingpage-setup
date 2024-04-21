@@ -10,9 +10,9 @@ class Slider {
         this.sourceArray = sourceArray;
     };
 
-    /** 
+    /** Função resposnável por alterar a imagem do slider por meio de um modificador, considerando que cada slider pode ser representado como um array do path das iamgens
     * @param {number} modifier
-    * @return {string}
+    * @return {string} o path da imagem para ser mostrada pelo slider
     */
     changeSlideImage(modifier){
         this.index += modifier; 
