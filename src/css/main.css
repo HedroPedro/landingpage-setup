@@ -199,6 +199,8 @@ img#logo {
     margin-bottom: 5px;
     padding-bottom: 1% !important;
     background-color: var(--default-text-color);
+    box-shadow: 0 5px 10px 0px var(--default-text-color),
+    1px 2px 1px 1px var(--default-text-color); 
     border-radius: 15px;
     color: var(--background-color);
     height: fit-content;
@@ -341,6 +343,7 @@ a.contact{
 
     #footer {
         text-align: center;
+        margin: 0 2.5% 2%;
     }
 
     #footer .list {
@@ -361,11 +364,11 @@ a.contact{
     }
 
     #benefits .list li{
-        padding: 5% 0 5%;
+        padding: 5% 0 2.5%;
     }
 
     #benefits .list li:first-child{
-        padding: 5% 5% 5% 0;
+        padding: 5% 5% 2.5% 0;
     }
 
     .image-container button{
@@ -457,7 +460,7 @@ a.contact{
     }
 
     #benefits .list li:first-child {
-        padding: 0% 0% 5% 0 !important;
+        padding: 0% 0% 0% 0 !important;
     }
 
     .campus-image {
